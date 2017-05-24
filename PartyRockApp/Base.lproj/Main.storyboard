@@ -155,13 +155,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1N-iX-t4f">
+                                <rect key="frame" x="21" y="20" width="46" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="mxq-bI-5OC" eventType="touchUpInside" id="bHO-Lo-xVv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.8834669503" green="0.8834669503" blue="0.8834669503" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="dyn-i1-tWp" firstAttribute="centerY" secondItem="9mC-tw-66n" secondAttribute="centerY" id="7jT-Sh-yfs"/>
                             <constraint firstItem="dyn-i1-tWp" firstAttribute="leading" secondItem="9mC-tw-66n" secondAttribute="leadingMargin" constant="5" id="7wg-9g-G4l"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dyn-i1-tWp" secondAttribute="trailing" constant="5" id="Hx6-Gz-MWt"/>
+                            <constraint firstItem="u1N-iX-t4f" firstAttribute="top" secondItem="3G9-Ry-eap" secondAttribute="bottom" id="RTH-HN-fds"/>
                             <constraint firstItem="dyn-i1-tWp" firstAttribute="centerX" secondItem="9mC-tw-66n" secondAttribute="centerX" id="TM9-ia-6d0"/>
+                            <constraint firstItem="u1N-iX-t4f" firstAttribute="leading" secondItem="9mC-tw-66n" secondAttribute="leadingMargin" constant="5" id="lTR-zz-M3a"/>
                         </constraints>
                     </view>
                     <connections>

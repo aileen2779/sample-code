@@ -10,6 +10,9 @@ import UIKit
 
 class VideoVC: UIViewController {
 
+    @IBAction func backButtonTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     @IBOutlet weak var webView: UIWebView!
     
     @IBOutlet weak var titleLbl: UILabel!
@@ -27,7 +30,7 @@ class VideoVC: UIViewController {
         super.viewDidLoad()
 
         titleLbl.text = partyRock.videoTitle
-        webView.loadHTMLString(partyRock.videoURL, baseURL: nil)
+//        webView.loadHTMLString(partyRock.videoURL, baseURL: nil)
     }
 
     override func didReceiveMemoryWarning() {
